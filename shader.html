@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shader</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div id="viewerWrap">
+        <canvas id="webgl" tabindex="0"></canvas>
+
+
+        <aside id="infoPanel">
+            <a href="#" id="backToChapter">Back to chapter</a>
+            <h2 id="shaderTitle">Shader</h2>
+            <p id="shaderDesc">Description</p>
+
+
+            <div class="controls">
+                <label>Time scale <input id="timeScale" type="range" min="0" max="3" step="0.01" value="1"></label>
+            </div>
+
+
+            <h3>GLSL code</h3>
+            <pre><code id="codeBlock" class="glsl"></code></pre>
+        </aside>
+    </div>
+
+
+    <script type="module" src="/shaderPage.js"></script>
+</body>
+
+</html>
